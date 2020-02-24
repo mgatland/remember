@@ -1,0 +1,43 @@
+.hidden {
+  display: none;
+}
+
+.usable .item, button {
+  background: white;
+  border-radius: 2px;
+  border: solid 1px grey;
+  color: grey;
+  display: inline-block;
+  padding: 4px 9px 6px 9px;
+  margin: 3px 5px 3px 5px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* primary button style */
+.active .item, button {
+  border: solid 1px#0064AC;
+  color: #0064AC;
+}
+
+/* secondary button style */
+button.remove {
+  border: solid 1px #9CCEF2;
+  color: #5C798E;
+}
+
+.choosePrompt {
+  margin-top: 15px;
+}
+
+.story {
+  margin-top: 7px;
+}
+
+.story:not(:last-child) {
+  color: grey;
+}
