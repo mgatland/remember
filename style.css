@@ -41,3 +41,12 @@ button.remove {
 .story:not(:last-child) {
   color: grey;
 }
+
+.flavour {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.story .flavour {
+  display: inline;
+}

@@ -10,7 +10,7 @@ const choosePrompt = document.querySelector('.choosePrompt')
 const okButton = document.querySelector('.ok')
 
 const flavours = {
-  'everything': 'The dev really did think of everything.',
+  'everything': '(The dev really did think of everything)',
 }
 
 const events = [
@@ -56,7 +56,7 @@ const addItem = () => {
   const itemName = input.value
   if (itemName === '') return
   const flavour = flavours[itemName.toLowerCase().trim()] || null
-  const flavourHtml = flavour ? `<div class=flavour'>${flavour}</div>` : ''
+  const flavourHtml = flavour ? `<div class='flavour'>${flavour}</div>` : ''
   const node = htmlToElement(`<div class='item'>${itemName} <button class='remove'>remove</button>${flavourHtml}</div>`)
   itemList.append(node)
   input.value = ''
