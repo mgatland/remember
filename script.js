@@ -88,6 +88,7 @@ packedButton.addEventListener('click', function (e) {
       choosePrompt.classList.add('hidden')
     }
     n++
+    scrollToEnd()
   }
 
   okButton.addEventListener('click', (e) => advanceStory())
@@ -135,4 +136,8 @@ function htmlToElement(html) {
   html = html.trim(); // Never return a text node of whitespace as the result
   template.innerHTML = html;
   return template.content.firstChild;
+}
+
+function scrollToEnd() {
+  window.scrollTo(0,document.body.scrollHeight)
 }
