@@ -61,6 +61,7 @@ const addItem = () => {
   itemList.append(node)
   input.value = ''
   updateItemCount()
+  input.focus()
 }
 
 packedButton.addEventListener('click', function (e) {
